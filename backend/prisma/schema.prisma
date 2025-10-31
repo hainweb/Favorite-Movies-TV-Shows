@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  name  String
+  email String  @unique
+  password String
+  entries Entry[]
+  createdAt DateTime @default(now())
+}
+
+model Entry {
+  id        Int     @id @default(autoincrement())
+  title     String
+  type      EntryType
+  director  String?
+  budget    String?
+  location  String?
+  duration  String?
+  year      String?
+  posterUrl String?
+  userId    Int
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+enum EntryType {
+  Movie
+  TV_Show @map("TV Show")
+}
+
