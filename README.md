@@ -2,6 +2,11 @@
 
 A modern, full-stack application for managing your personal collection of favorite movies and TV shows. Built with React, TypeScript, Vite, TailwindCSS on the frontend and Node.js, Express, Prisma ORM with MySQL on the backend.
 
+### 🌐 **Live Demo**
+🔗 [**https://favorite-movies-tv-shows-steel.vercel.app**](https://favorite-movies-tv-shows-steel.vercel.app/)
+
+---
+
 
 ![React](https://img.shields.io/badge/React-18.3-61dafb.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178c6.svg)
