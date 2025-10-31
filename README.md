@@ -192,14 +192,7 @@ DATABASE_URL="mysql://username:password@localhost:3306/movies_db"
 
 # JWT Configuration
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
-JWT_EXPIRES_IN=7d
 
-# CORS Configuration
-CORS_ORIGIN=http://localhost:5173
-
-# File Upload Configuration
-UPLOAD_DIR=./uploads
-MAX_FILE_SIZE=5242880
 ```
 
 ### Database Setup
